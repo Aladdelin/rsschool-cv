@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.body-wrapper {
+  height: 100%;
+  width: 100%;
+}
+header {
+  display: flex;
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(
+    60deg,
+    #a7a6cb 15%,
+    #8989ba 40%,
+    #8989ba 80%,
+    #717199 100%
+  );
+  justify-content: space-between;
+}
+.header-avatar-name-container {
+  display: flex;
+}
+.header-name-block {
+  width: 300px;
+  height: 160px;
+  margin-top: 20px;
+}
+
+.header-avatar {
+  background-image: url(assets/kit.png);
+  background-repeat: no-repeat;
+  background-size: 150px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border: 5px solid white;
+  margin-top: 20px;
+}
+.header-name {
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+.header-name-addition ul {
+  display: flex;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.header-contacts-block {
+  height: 80px;
+  width: 400px;
+  margin-top: 100px;
+}
+.header-contact-title {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.header-contact-sources {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+  justify-content: center;
+}
+.header-contacts-block img {
+  width: 40px;
+  height: 40px;
+}
+.header-contacts-block img:active {
+  opacity: 0.6;
+}
+main {
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(
+    100deg,
+    #a7a6cb 15%,
+    #8989ba 40%,
+    #8989ba 80%,
+    #717199 100%
+  );
+}
+.main-wrapper {
+  height: 90%;
+  width: 96%;
+  margin: 0 auto;
+  background:white;
+}
+.main-info-title,
+.main-skills-title,
+.main-examples-title,
+.main-exp-title,
+.main-education-title,
+.main-eng-title {
+  color: #46455e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  border-top: 2px dashed #a7a6cb;
+}
+.main-info-title {
+  border-top: none;
+}
+.main-end-text {
+  border-bottom: 2px dashed #a7a6cb;
+}
+.main-info-text,
+.main-skills-text,
+.main-examples-text,
+.main-exp-text,
+.main-education-text,
+.main-end-text {
+  color: #46455e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+.main-wrapper div {
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.main-wrapper div:nth-child(1) {
+  margin-top: 0px;
+}
