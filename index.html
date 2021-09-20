@@ -3,14 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximus-scale=1.0, user-scalable=0"
+    />
+    <title>CV</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
+      href="libs/highlight/styles/base16/classic-dark.min.css"
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,75 +24,153 @@
   <body>
     <div class="body-wrapper">
       <header>
-        <div class="header-avatar-name-container">
-          <img src="assets/kit.png" alt="Image wasn't loaded" class="header-avatar"></img>
-          <div class="header-name-block">
-            <div class="header-name"><h1>Alexander Sergeevich Latyshev</h1></div>
-            <div class="header-name-addition">
+        <div class="header-wrapper">
+          <div class="header-profile-block">
+            <img src="assets/kit.png" alt="Image wasn't loaded" />
+            <div class="header-name">
+              <h1>Latyshev Alexander Sergeevich</h1>
               <ul>
                 <li>Novice JavaScript Developer</li>
                 <li>HTML/CSS-coder</li>
                 <li>Student</li>
-                <li>Belarus</li>
               </ul>
             </div>
           </div>
+          <aside class="header-burger" id="header-burger">
+            <span></span>
+          </aside>
+          <nav class="header-menu" id="header-menu">
+            <ul>
+              <li><a href="#AboutMe">Information</a></li>
+              <li><a href="#Skills">Skills</a></li>
+              <li><a href="#Examples">Examples</a></li>
+              <li><a href="#Experience">Experience</a></li>
+              <li><a href="#Education">Education</a></li>
+              <li><a href="#English">English level</a></li>
+              <li></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="header-contacts-block">
-          <div class="header-contact-title">My Contacts:</div>
-          <ul style="list-style-type: none" class="header-contact-sources">
-            <li class="header-contacts-vk">
-              <a href="https://vk.com/aladdelin"><img src="assets/vk.png" alt=""/></a>
-            </;>
-            <li class="header-contacts-inst">
-              <a href="https://www.instagram.com/aladdelin/"><img src="assets/instagram.png" alt=""/></a>
-            </;>
-            <li class="header-contacts-telegram">
-              <a href="https://t.me/aladdelin"><img src="assets/telegram-256x256.png" alt=""/></a>
-            </;>
-            <li class="header-contacts-gh">
-              <a href="https://github.com/Aladdelin"><img src="assets/gh.png" alt=""/></a>
-            </;>
-            <li class="header-contacts-discord">
-              <a href="#"><img src="assets/discord.png" alt=""/></a>
-            </;>
-          </ul>
-        </nav>
       </header>
 
       <main>
-          <div class="main-wrapper">
-              <article class="main-info-container">
-                  <h4 class="main-info-title">Info about me</h4>
-                  <div class="main-info-text">Diligent, disciplined.</div>
+        <section class="main-sectionInfo section" id="AboutMe">
+          <div class="sectionInfo-wrapper">
+            <div class="sectionInfo-container">
+              <h2>About me</h2>
+              <article>
+                <ul>
+                  <li>Diligent</li>
+                  <li>Disciplined</li>
+                  <li>Ambitious</li>
+                  <li>etc</li>
+                </ul>
               </article>
-              <ul style="list-style-type: none;" class="main-skills-container">
-                  <li class="main-skills-title">My skills</li>
-                  <li class="main-skills-text">HTML, CSS.</li>
-              </ul>
-              <article class="main-examples-container">
-                  <h4 class="main-examples-title">Examples of my work</h4>
-                  <div class="main-examples-text">Test1 Foxy (on my github).</div>
-              </article>
-              <article class="main-exp-container">
-                  <h4 class="main-exp-title">Work experience</h4>
-                  <div class="main-exp-text">HTML Academy, Learn Java Script.</div>
-              </article>
-              <article class="main-education-container">
-                  <h4 class="main-education-title">Education</h4>
-                  <div class="main-education-text">I have graduated from high school and HTML Academy. Now I start to learning at RS School and University.</div>
-              </article>
-              <article class="main-eng-container">
-                  <h4 class="main-eng-title">English level</h4>
-                  <div class="main-end-text">A2</div>
-              </article>
+            </div>
           </div>
+        </section>
+        <section class="main-sectionSkills" id="Skills">
+          <div class="sectionSkills-wrapper">
+            <div class="sectionSkills-container">
+              <h2>Skills</h2>
+              <article>
+                <ul>
+                  <li>CSS</li>
+                  <li>HTML</li>
+                  <li>JavaScript</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <!-- <section class="main-sectionCode">
+        <div class="sectionCode-wrapper">
+          <div class="sectionCode-container">
+            <h3>Code Example</h3>
+            <div class="code-content">
+              <div class="block"></div>
+              <pre class="code-container">
+                <code class="code-text">
+                  const burger = document.querySelector('.header-burger');
+                  const burgerMenu = document.querySelector('.header-menu');
+  
+                  burger.addEventListener("click", ()=> {
+                    burger.classList.toggle("menu__Active");
+                    burgerMenu.classList.toggle("menu__Active")
+                });
+                </code>
+              </pre>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+        <section class="main-sectionExamples" id="Examples">
+          <div class="sectionExamples-wrapper">
+            <h4>Examples of my work</h4>
+            <div class="sectionExamples-content">
+              <figure class="project-1">
+                <a href="https://rolling-scopes-school.github.io/aladdelin-JSFEPRESCHOOL/museum/landing.html">
+                <img src="assets/background.jpg" alt="Image wasn't loaded"></a>
+                <figcaption>Museum</figcaption>
+              </figure>
+              <figure class="project-2">
+                <a href="https://rolling-scopes-school.github.io/aladdelin-JSFEPRESCHOOL/js-clock/clock">
+                <img src="assets/clock.png" alt="Image wasn't loaded"></a>
+                <figcaption>JS Clock</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-sectionExperience" id="Experience">
+          <div class="sectionExperience-wrapper">
+            <div class="sectionExperience-container">
+              <h5>Work Experience</h5>
+              <span class="Exp-text">I have done few projects from RS school</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="main-sectionEducation" id="Education">
+          <div class="sectionEducation-wrapper">
+            <div class="sectionEducation-container">
+              <h6>Education</h6>
+              <span class="Exp-text Exp-text-white">I have graduated from high school and HTML Academy. Now I start to learning at RS School and University.</span>
+            </div>
+          </div>
+        </section>
+        <section class="main-sectionEnglish" id="English">
+          <div class="sectionEnglish-wrapper">
+            <div class="sectionEnglish-container">
+              <h6>English level</h6>
+              <span class="Exp-text Exp-text-white">I study with a teacher and now I have A2 level.</span>
+            </div>
+          </div>
+        </section>
+
       </main>
 
       <footer>
-        FOOTER-CONTENT
+        <nav class="footer-contacts">
+          <div class="contacts-title">
+            My Contacts
+          </div>
+          <ul class="footer-contact-sources">
+            <li class="footer-contacts-vk"><a href="https://vk.com/aladdelin"><img src="assets/vk.png" alt="Image wasn't loaded"></a></li>
+            <li class="footer-contacts-inst"><a href="https://t.me/aladdelin"><img src="assets/instagram.png" alt="Image wasn't loaded"></a></li>
+            <li class="footer-contacts-telegram"><a href="https://github.com/Aladdelin"><img src="assets/telegram-256x256.png" alt="Image wasn't loaded"></a></li>
+            <li class="footer-contacts-gh"><a href="https://github.com/Aladdelin"><img src="assets/gh.png" alt="Image wasn't loaded"></a></li>
+            <li class="footer-contacts-discord"><a href="#"><img src="assets/discord.png" alt="Image wasn't loaded"></a></li>
+          </ul>
+        </nav>
       </footer>
     </div>
     <script src="script.js"></script>
+    <script src="libs/highlight/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
   </body>
 </html>
