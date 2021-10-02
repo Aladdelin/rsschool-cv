@@ -605,3 +605,7 @@ footer {
 .sectionCode-wrapper {
   width: 70%;
 }
+.sectionInfo-container h2,
+.sectionSkills-container h2 {
+  display: none;
+}
